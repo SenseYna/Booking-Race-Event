@@ -1,0 +1,192 @@
+.naruto-title {
+    background: url(../img/title.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45rem;
+    min-height: 106px;
+    margin: 40px 0 0;
+    display: inline-block;
+}
+
+.info-timelapse {
+    margin-bottom: 10px;
+    padding: 0 30px;
+    font-size: 1.7rem;
+    color: #d5d2cc;
+    font-weight: 400;
+}
+.kunai {
+    background: url(../img/27.png);
+    background-size: contain;
+    width: 90px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.slide1 {background: url(../img/testimonials/lang1.jpg)}
+.slide2 {background: url(../img/testimonials/lang2.jpg)}
+.slide3 {background: url(../img/testimonials/lang3.png)}
+
+.slide-show {
+    background-size: cover;
+    width: 100%;
+    height: 89vh;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-theme .owl-controls {
+    margin-top: 0;
+}
+.owl-next img {width: 60%;}
+.owl-next {
+    text-align: left;
+}
+.owl-prev img {width: 60%;}
+.owl-prev {
+    text-align: right;
+}
+
+.minato-price {
+    min-height: 450px;
+}
+
+/* .minato-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
+
+.genin-price {
+    /* background: url(../img/ve-genin-nobg.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    min-height: 450px;
+}
+
+/* .genin-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
+
+.team7-price {
+    /* background: url(../img/ve-team7-nobg.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-color: #fca300; */
+    min-height: 450px;
+}
+
+/* .team7-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
+
+.lgx-registration-area .lgx-single-registration .lgx-single-registration-inner {
+    padding: 3rem 2rem 3rem;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* transition: .5s; */
+    /* top: 0; */
+}
+
+.single-bottom {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 20;
+}
+
+.single-bottom .title {
+    color: #031e50;
+    margin-bottom: 0;
+}
+
+.single-bottom p {
+    color: #031e50;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.single-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+}
+.single-middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background: #0000001c;
+}
+
+.lgx-registration-area .lgx-single-registration .single-middle .price {
+    font-family: Poppins,sans-serif;
+    color: #fff;
+    font-size: 6.8rem;
+    line-height: 10.2rem;
+    line-height: 8rem;
+    font-weight: 900
+}
+
+.lgx-registration-area .lgx-single-registration .single-middle .price i {
+    font-family: Poppins,sans-serif;
+    font-size: 2.6rem;
+    line-height: 3.9000000000000004rem;
+    font-weight: 300;
+    color: #fff;
+    font-style: normal;
+    position: relative;
+    top: -30px
+}
+
+.lgx-registration-area .lgx-single-registration .single-middle .price span {
+    font-family: Poppins,sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #fff
+}
+
+.lgx-travelinfo .lgx-travelinfo-single .title {
+    color: #fda70a;
+}
+
+.lgx-sponsors .lgx-inner {
+    background: none ;
+}
+
+h2.price {
+    font-weight: bold;
+}
+
+.lgx-registration-area .lgx-single-registration:hover .single-bottom .title,
+.lgx-registration-area .lgx-single-registration:hover .single-bottom p,
+.lgx-registration-area .lgx-single-registration:hover .single-bottom .price{
+    color: white !important;
+}
+
+.lgx-registration-area .lgx-single-registration:hover .single-bottom button {
+    background: #fda70a;
+}
+
+.lgx-header .menu-onscroll .lgx-nav-right .lgx-cart-area button {
+    background: #fda70a;
+}
+
+.cover-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000085;
+    z-index: 111;
+}

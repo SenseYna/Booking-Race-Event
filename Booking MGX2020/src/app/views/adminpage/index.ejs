@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/homepage/assets/img/favicon.ico" />
+
+    <title>ADMIN</title>
+
+    <% include ./partials/css %> <% include ./partials/dataTableCss %>
+  </head>
+
+  <body class="fixed-left">
+    <!-- Begin page -->
+    <div id="wrapper">
+       <% include ./partials/topBar %>
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card-box table-responsive">
+                  <h4 class="m-t-0 header-title">
+                    <button
+                        class="btn lgx-btn <%- isEarlyBird ? 'btn-warning' : 'btn-dark'  %>"
+                        style=" margin-left: 10px; padding: 9px 20px; "
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#active-tickets"
+                      >
+                        <span><%- isEarlyBird ? 'Kích hoạt vé' : 'Đã kích hoạt'  %></span>
+                      </button>
+                    <button
+                        class="btn lgx-btn btn-primary"
+                        style=" margin-left: 10px; padding: 9px 20px; "
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#buyticket"
+                      >
+                        <span>Buy Ticket</span>
+                      </button>
+                  </h4>
+
+                  <table id="datatable" class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>TT</th>
+                        <th>Email</th>
+                        <th>Họ tên</th>
+                        <th>SDT</th>
+                        <th>Loại vé</th>
+                        <th>Số lượng</th>
+                        <th>Times</th>
+                        <th>Trạng thái</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <% tickets.map((item, index) => { %>
+                      <tr>
+                        <td><%- index + 1 %></td>
+                        <td><%- item.email %></td>
+                        <td><%- item.fullname %></td>
+                        <td><%- item.numberphone %></td>
+                        <td><%- item.ticketId.name %></td>
+                        <td><%- item.quanlity %></td>
+                        <td><%- moment(item.createdAt).format("LLL") %></td>
+                        <td>
+                          <% if (item.isActive) { %>
+                          <span class="badge badge-primary">Paid</span>
+                          <% } else { %>
+                          <span class="badge badge-danger">Waiting</span>
+                          <% } %>
+                        </td>
+                        <td>
+                          <% if (!item.isActive) { %>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            onclick="selectId('<%- item._id %>')"
+                          >
+                            Confirm
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-toggle="modal"
+                            data-target="#deleteThis"
+                            onclick="selectId('<%- item._id %>')"
+                          >
+                            Delete
+                          </button>
+                          <% } %>
+                        </td>
+                      </tr>
+                      <% }) %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- content -->
+
+        <% include ./partials/footer %>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- End Right content here -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <% include ./partials/js %> <% include ./partials/dataTableJs %>
+
+    <div
+      class="modal fade"
+      id="deleteThis"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Are you sure to delete it</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="deleteTicket()">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Are you sure</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="save()">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="buyticket"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form method="POST" action="/admin/buy">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="lgx-input-form form-control"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fullname">Fullname</label>
+                <input
+                  type="text"
+                  class="lgx-input-form form-control"
+                  id="fullname"
+                  name="fullname"
+                  required
+                  placeholder=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="numberphone">Number phone</label>
+                <input
+                  type="number"
+                  class="lgx-input-form form-control"
+                  id="numberphone"
+                  name="numberphone"
+                  required
+                  placeholder="0912345678"
+                />
+              </div>
+              <div class="form-group">
+                <label for="quanlity">Quanlity</label>
+                <input
+                  type="number"
+                  class="lgx-input-form form-control"
+                  id="quanlity"
+                  name="quanlity"
+                  required
+                  placeholder="1"
+                  min="1"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Ticket type</label>
+                <select
+                  class="form-control"
+                  id="exampleFormControlSelect1"
+                  name="ticketId"
+                  required
+                >
+                  <% ticketCategories.map(item => { %>
+                  <option value="<%- item._id %>"
+                    ><%- item.name %> (<%- item.prices %>.000 VND)</option
+                  >
+                  <% }) %>
+                </select>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary" style="    background: #e0e721; color: #4a25aa; border-color: #e0e721">
+                  Confirm
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="active-tickets"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+              Xác nhận kích hoạt 2 loại vé Genin và Team 7 ?
+              <div class="modal-footer" style=" border: none; margin-top: 20px; ">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Thoát
+                </button>
+                <button onclick="activeTicket()" class="btn btn-danger">
+                  Xác nhận
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var idTickets = "";
+      $(document).ready(function() {
+        // Default Datatable
+        $("#datatable").DataTable();
+      });
+      function selectId(id) {
+        idTickets = id;
+      }
+      function save() {
+        $.ajax({
+          url: `/admin/approve/${idTickets}`,
+          method: "POST",
+          success: res => {
+            window.location.reload();
+          },
+          error: res => {
+            alert("Something went wrongs");
+          }
+        });
+      }
+      function deleteTicket() {
+        $.ajax({
+          url: `/admin/${idTickets}`,
+          method: "DELETE",
+          success: res => {
+            window.location.reload();
+          },
+          error: res => {
+            alert("Something went wrongs");
+          }
+        });
+      }
+      function activeTicket() {
+        $.ajax({
+          url: `/admin/activeTickets`,
+          method: "GET",
+          success: res => {
+            alert("Kích hoạt vé thành công!!!");
+            window.location.reload();
+          },
+          error: res => {
+            alert("Something went wrongs");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
