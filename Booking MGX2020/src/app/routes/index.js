@@ -1,5 +1,5 @@
 var router = require('express').Router();
-var {checkPermission} = require('services/checkPermission')
+var {checkPermission} = require('../../services/checkPermission')
 
 
 router.use('/', require('./homepage'));

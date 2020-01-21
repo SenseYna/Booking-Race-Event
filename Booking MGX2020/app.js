@@ -3,12 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var passport = require("passport");
+var passport = require("./src/config/passport");
+require('dotenv').config();
 var session = require('express-session');
-var config = require("config");
+var config = require("./src/config");
 
-require('model/connect');
-require('model/schema');
+require('./src/model/connect.js');
+require('./src/model/schema');
 
 isEarlyBird = true
 var app = express();
@@ -30,15 +31,19 @@ app.use(
 );
 
 
+
+
 //PassportJS middleware
+var passport = require('passport');
+
 app.use(passport.initialize());
 app.use(passport.session()); //persistent login sessions
 
-require('config/passport')(passport);
+require('./src/config/passport')(passport);
 
 
 app.use(logger('dev'));
-app.use('/', require('app/routes'));
+app.use('/', require('./src/app/routes'));
 
   // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -55,5 +60,6 @@ app.use(function(err, req, res, next) {
   // res.status(err.status || 500);
   return res.redirect("/");
 });
+
 
 module.exports = app;

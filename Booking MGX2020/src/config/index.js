@@ -16,6 +16,6 @@ module.exports = {
     DEBUG: {
         server: "Timelapse_music_festival"
     },
-    domain: "https://timelapse.webdevstudios.org",
-    // domain: "http://localhost:1405"
+   // domain: "https://timelapse.webdevstudios.org",
+    domain: "https://localhost:1409",
 }
