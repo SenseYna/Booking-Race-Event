@@ -1,12 +1,3 @@
-.naruto-title {
-    background: url(../img/title.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 45rem;
-    min-height: 106px;
-    margin: 40px 0 0;
-    display: inline-block;
-}
 
 .info-timelapse {
     margin-bottom: 10px;
@@ -174,7 +165,7 @@ h2.price {
 }
 
 .lgx-registration-area .lgx-single-registration:hover .single-bottom button {
-    background: #fda70a;
+    background: #f8bd00;
 }
 
 .lgx-header .menu-onscroll .lgx-nav-right .lgx-cart-area button {

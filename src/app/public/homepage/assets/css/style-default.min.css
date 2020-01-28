@@ -286,7 +286,36 @@ textarea.form-control {
 .lgxmapcanvas {
     height: 450px
 }
-
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading
+{
+    text-align: center;
+    margin-bottom: 6.8rem;
+    overflow: hidden;
+    display: block;
+    margin-top: 10rem;
+    margin-left: 15rem;
+}
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading
+{
+    font-family: SEGUISBI, Poppins,sans-serif;
+    font-size:5.0rem;
+    line-height: 6.300000000000001rem;
+    color: black;
+    margin: 0 0 1rem;
+    text-align: left;
+    text-transform: none;
+    font-weight: 800;
+}
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .subheading
+{
+    font-family: SEGUISBI, Poppins,sans-serif;
+    font-size: 2.4rem;
+    line-height: 2rem;
+    text-align: left;
+    color: black;
+    text-transform: none;
+    margin: 0 0 1rem;
+}
 .lgx-heading {
     text-align: center;
     margin-bottom: 6.8rem;
@@ -296,7 +325,7 @@ textarea.form-control {
 }
 
 .lgx-heading .heading {
-    font-family: Bevan, Poppins,sans-serif;
+     font-family: SEGUISBI, Poppins,sans-serif;
     font-size: 6.2rem;
     line-height: 6.300000000000001rem;
     color: #d5d2cc;
@@ -305,7 +334,7 @@ textarea.form-control {
 }
 
 .lgx-btn,.lgx-header .lgx-navbar .lgx-nav li a,.lgx-heading .subheading,.lgx-subheading,.lgx-submit,.wpcf7-submit,button {
-    font-family: Oswald,sans-serif;
+    font-family: SEGUILI,sans-serif;
 }
 
 .lgx-heading .subheading {
@@ -341,10 +370,10 @@ textarea.form-control {
 }
 
 .lgx-btn,.lgx-submit,.wpcf7-submit,button {
-    border-radius: 10px;
     overflow: hidden;
     border: none;
     text-align: center;
+    border-radius: 0;
     cursor: pointer;
     text-transform: uppercase;
     outline: 0;
@@ -356,7 +385,7 @@ textarea.form-control {
     padding: 1.2rem 5rem;
     display: inline-block;
     letter-spacing: .1rem;
-    background: #001d52;
+    background: black;
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
@@ -364,6 +393,29 @@ textarea.form-control {
     -webkit-box-shadow: 0 8px 6px -6px rgba(50,51,51,.4);
     -moz-box-shadow: 0 8px 6px -6px rgba(50,51,51,.4);
     box-shadow: 0 8px 6px -6px rgba(50,51,51,.4);
+}
+.lgx-banner-button .def-btn
+{
+    border-radius: 0;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    height: 30%;
+    text-transform: none;
+    outline: 0;
+    position: relative;
+    color: #fff9;
+    font-weight: 100;
+    
+    background: #fff0;
+    border: 1px solid black;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 1.2rem 5rem;
+    display: inline-block;
+    letter-spacing: .1rem;
+     box-shadow: none;
 }
 
 .lgx-btn:hover,.lgx-submit:hover,.wpcf7-submit:hover,button:hover {
@@ -385,20 +437,7 @@ textarea.form-control {
     z-index: 1
 }
 
-.lgx-btn:after,.lgx-submit:after,.wpcf7-submit:after,button:after {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: 14px;
-    height: 200px;
-    width: 200px;
-    background: #1b273d;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    opacity: .15
-}
+
 
 .lgx-btn:hover:after,.lgx-submit:hover:after,.wpcf7-submit:hover:after,button:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
@@ -6668,12 +6707,11 @@ textarea.form-control {
 .lgx-header .lgx-navbar .lgx-nav li a {
     font-size: 1.6rem;
     line-height: 2.4000000000000004rem;
-    font-weight: 600;
+    font-weight: 100;
     text-transform: uppercase;
-    opacity: .8;
     letter-spacing: .06rem;
     padding: 32px 11px;
-    color: #1b273d;
+    color: white;
 }
 
 .lgx-header .lgx-navbar .lgx-nav li a:hover {
@@ -6876,8 +6914,8 @@ textarea.form-control {
     color: inherit
 }
 
-.lgx-header .menu-onscroll .lgx-nav-right .lgx-search,.lgx-header-position-white .lgx-nav-right .lgx-search a,.lgx-header-position-white .lgx-navbar .lgx-nav li a {
-    color: #001d52;
+.menu-onscroll .lgx-nav-right .lgx-search,.lgx-header-position-white .lgx-nav-right .lgx-search a,.lgx-header-position-white .lgx-navbar .lgx-nav li a {
+    color: black;
 }
 
 .lgx-header {
@@ -6935,7 +6973,7 @@ textarea.form-control {
 }
 
 .lgx-header .menu-onscroll {
-    background: rgba(27,39,61,.95);
+    background: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7364,8 +7402,8 @@ textarea.form-control {
     text-align: center;
     color: #fff;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 40%);
+    top:100%
+   
 }
 
 .lgx-banner-info .circular-countdown-area {
@@ -8623,8 +8661,8 @@ textarea.form-control {
 .lgx-about {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #00112e !important;
+    background-position: top;
+    background: url(../img/bg0.png);
 }
 
 .lgx-about2 {
@@ -8794,7 +8832,7 @@ textarea.form-control {
 }
 
 .lgx-about-content-area .lgx-heading .heading {
-    margin: 0
+    margin: 5px;
 }
 
 .lgx-about-content-area .lgx-heading .subheading {
@@ -10516,7 +10554,7 @@ textarea.form-control {
     transition-duration: .3s;
     flex: 1;
     text-align: center;
-    color: #fff;
+    background-color: black;
     overflow: hidden;
     position: relative;
     border-radius: 16px;
@@ -11058,7 +11096,7 @@ textarea.form-control {
 }
 
 #lgx-countdown span,.lgx-inner-countdown .countdown-left-info .date {
-    font-family: Oswald,sans-serif
+    font-family: SEGUIBLI,sans-serif
 }
 
 .lgx-inner-countdown .countdown-right {
@@ -11073,15 +11111,13 @@ textarea.form-control {
 
 #lgx-countdown span {
     text-align: center;
-    font-size: 9.8rem;
+    font-size: 5.8rem;
     line-height: 10.2rem;
-    font-weight: 900;
+    font-weight: 600;
     display: inline-block;
     margin-bottom: 0;
-    margin-right: 6.8rem;
     letter-spacing: .16rem;
-    position: relative;
-    bottom: -15px;
+    position: absolute;
 }
 
 #lgx-countdown span:last-child {
@@ -11089,7 +11125,7 @@ textarea.form-control {
 }
 
 #lgx-countdown i {
-    font-family: Poppins,sans-serif;
+    font-family: SEGUIBLI,sans-serif;
     font-size: 2rem;
     line-height: 3rem;
     color: #fff;
@@ -11111,23 +11147,23 @@ textarea.form-control {
     -webkit-transform: rotate(0);
     font-style: normal;
     left: 0;
-    text-transform: uppercase
+    text-transform: lowercase;
 }
 
 #lgx-countdown .lgx-days {
-    color: #001d52
+    color: #fff
 }
 
 #lgx-countdown .lgx-hr {
-    color: #001d52
+    color: #fff
 }
 
 #lgx-countdown .lgx-min {
-    color: #001d52
+    color: #fff
 }
 
 #lgx-countdown .lgx-sec {
-    color: #001d52  
+    color: #fff  
 }
 
 .lgx-banner-info-circle #lgx-countdown span {
@@ -11296,7 +11332,7 @@ textarea.form-control {
     right: 0;
     left: 0;
     opacity: 1;
-    color: #001d52;
+    color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
 }
