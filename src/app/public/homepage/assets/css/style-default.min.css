@@ -298,8 +298,8 @@ textarea.form-control {
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading
 {
     font-family: SEGUISBI, Poppins,sans-serif;
-    font-size:5.0rem;
-    line-height: 6.300000000000001rem;
+    font-size:4.5rem;
+    line-height: 5.5rem;
     color: black;
     margin: 0 0 1rem;
     text-align: left;
@@ -309,7 +309,8 @@ textarea.form-control {
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .subheading
 {
     font-family: SEGUISBI, Poppins,sans-serif;
-    font-size: 2.4rem;
+    inline-size: 33rem
+    font-size: 2.0rem;
     line-height: 2rem;
     text-align: left;
     color: black;
@@ -11106,7 +11107,7 @@ textarea.form-control {
 
 #lgx-countdown {
     text-align: center;
-    margin-top: -15px;
+    margin-top: -30px
 }
 
 #lgx-countdown span {
@@ -11328,13 +11329,13 @@ textarea.form-control {
     font-style: normal;
     display: inline-block;
     position: absolute;
-    bottom: -20px;
+    bottom: -5px;
     right: 0;
     left: 0;
     opacity: 1;
     color: #fff;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.0rem;
+    font-weight: 100;
 }
 
 @media (max-width: 1199px) {
