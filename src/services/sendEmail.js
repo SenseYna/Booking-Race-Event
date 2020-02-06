@@ -8,12 +8,12 @@ const Send = (sendTo, subject, content) => {
     SMTPAuth: true,
     SMTPSecure: "tls",
     auth: {
-      user: "timelapse.musicfestival@gmail.com",
-      pass: "ttoovdelqiklxadg"
+      user: "manhghepmoi.uit.ussh@gmail.com",
+      pass: "nmhbdrvplreljzlo"
     }
   });
   mailOpts = {
-    from: "Timelapse Festival Music",
+    from: "Chiến dịch tình nguyện Mảnh ghép mới",
     to: sendTo,
     subject: subject,
     generateTextFromHTML: true,
@@ -26,8 +26,9 @@ const Send = (sendTo, subject, content) => {
       Send(sendTo, subject, content);
     } else {
       console.log(`Gui thanh cong ${sendTo}`);
+      smtpTrans.close();
     }
-  });
+  })
 };
 module.exports = {
   Send,
@@ -39,12 +40,12 @@ module.exports = {
       SMTPAuth: true,
       SMTPSecure: "tls",
       auth: {
-        user: "timelapse.musicfestival@gmail.com",
-        pass: "ttoovdelqiklxadg"
+        user: "manhghepmoi.uit.ussh@gmail.com",
+        pass: "nmhbdrvplreljzlo"
       }
     });
     mailOpts = {
-      from: "Timelapse Festival Music",
+      from: "Chiến dịch tình nguyện Mảnh ghép mới",
       replyTo: replyTo,
       to: sendTo,
       subject: subject,
@@ -56,6 +57,7 @@ module.exports = {
         console.log("Gui that bai");
       } else {
         console.log("Gui thanh cong");
+         smtpTrans.close();
       }
     });
   }
