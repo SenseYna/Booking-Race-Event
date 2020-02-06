@@ -13553,6 +13553,8 @@ blockquote.lgx-testi-single:before {
     .lgx-banner-button .def-btn {
         width: 100%;
         font-size: 3rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
     }
 
     .lgx-video-area figure figcaption .video-icon i {
