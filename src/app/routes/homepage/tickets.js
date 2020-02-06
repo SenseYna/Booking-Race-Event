@@ -29,7 +29,7 @@ const tickets = async (req, res, next) => {
       },
       moment
     });
-    Send(newTickets.email, "[Chiến dịch tình nguyện Mảnh ghép mới] - Xác nhận Đăng ký vé và hướng dẫn thanh toán", html);
+    Send(newTickets.email, "[Chiến dịch Tình nguyện Mảnh Ghép Mới] - Xác nhận Đăng ký vé và hướng dẫn thanh toán ", html);
 
     const ticketCategories = await mongoose.model("ticketCategories").find();
     return res.render('homepage/index', { ticketCategories, isEarlyBird, isOk: true });

@@ -9,11 +9,11 @@ const Send = (sendTo, subject, content) => {
     SMTPSecure: "tls",
     auth: {
       user: "manhghepmoi.uit.ussh@gmail.com",
-      pass: "nmhbdrvplreljzlo"
+      pass: "sgtctjmzxjtblgbl"
     }
   });
   mailOpts = {
-    from: "Chiến dịch tình nguyện Mảnh ghép mới",
+    from: "Chiến dịch Tình nguyện Mảnh Ghép Mới",
     to: sendTo,
     subject: subject,
     generateTextFromHTML: true,
@@ -41,11 +41,11 @@ module.exports = {
       SMTPSecure: "tls",
       auth: {
         user: "manhghepmoi.uit.ussh@gmail.com",
-        pass: "nmhbdrvplreljzlo"
+        pass: "sgtctjmzxjtblgbl"
       }
     });
     mailOpts = {
-      from: "Chiến dịch tình nguyện Mảnh ghép mới",
+      from: "Chiến dịch Tình nguyện Mảnh Ghép Mới",
       replyTo: replyTo,
       to: sendTo,
       subject: subject,

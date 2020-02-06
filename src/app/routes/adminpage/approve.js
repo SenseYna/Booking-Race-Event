@@ -16,7 +16,7 @@ const approve = async (req, res, next) => {
       moment
     });
 
-    Send(finalTickets.email, "[Timelapse Music Festival] - Xác nhận hoàn tất mua vé", html);
+    Send(finalTickets.email, "[Chiến dịch Tình nguyện Mảnh Ghép Mới] - Xác nhận hoàn tất thanh toán", html);
     return res.send();
   } catch (err) {
     console.log(err)

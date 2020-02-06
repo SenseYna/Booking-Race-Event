@@ -6778,7 +6778,7 @@ textarea.form-control {
     transform-origin: center;
     animation-duration: .4s;
     animation-timing-function: linear;
-    margin-top: .5rem;
+    margin-top: -1rem;
     display: inline-block
 }
 
@@ -7861,7 +7861,7 @@ textarea.form-control {
 @media (max-width: 480px) {
     .lgx-banner-info {
         color:#fff;
-        transform: translate(-50%, 100%);
+        transform: translate(-8%, 100%);
     }
 
 .naruto-title {
@@ -11352,7 +11352,7 @@ textarea.form-control {
 @media (max-width: 1199px) {
     #lgx-countdown {
         display:inline-block;
-        margin-bottom: 2.6rem
+        margin-bottom: 2.6rem;
     }
 
     #lgx-countdown span {
@@ -11389,7 +11389,7 @@ textarea.form-control {
     }
 
     #lgx-countdown {
-        display: inline-block
+        display: inline-block;
     }
 
     .lgx-countdowns-banner-bottom {
@@ -13514,7 +13514,10 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-countdown-simple #lgx-countdown span {
-        margin-right: 3rem
+        margin-right: 0rem;
+        font-size: 5rem;
+        margin-left: 0rem;
+        line-height: 6rem;
     }
 
     .lgx-banner-info-christmas .lgx-countdown-area,.lgx-banner-info-comingsoon .lgx-countdown-area {
@@ -13538,7 +13541,18 @@ blockquote.lgx-testi-single:before {
     .lgx-heading .heading {
         font-size: 3rem !important;
         line-height: 4.5rem;
-        font-weight: 100 !important;
+        font-weight: 600 !important;
+    }
+
+    .lgx-heading .subheading {
+        font-size: 3rem !important;
+        margin: -10.4rem 0rem 0rem 22rem !important;
+        line-height: 4.5rem;
+        font-weight: 600 !important;
+    }
+    .lgx-banner-button .def-btn {
+        width: 100%;
+        font-size: 3rem;
     }
 
     .lgx-video-area figure figcaption .video-icon i {
@@ -13595,3 +13609,7 @@ blockquote.lgx-testi-single:before {
     }
 }
     
+
+@media (max-width: 480px){
+
+}
