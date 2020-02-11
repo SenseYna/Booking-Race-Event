@@ -296,7 +296,7 @@ textarea.form-control {
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading
 {
-    font-family: SEGUISBI, Poppins,sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size:11rem;
     line-height: 5.5rem;
     color: #0B734D;
@@ -304,7 +304,7 @@ textarea.form-control {
     margin-bottom: 5rem;
     text-align: left;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 900;
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .divider_box
 {
@@ -316,14 +316,14 @@ textarea.form-control {
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .subheading
 {
-    font-family: SEGUISBI, Poppins,sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size:11rem;
     line-height: 5.5rem;
     color: #0B734D;
     margin: 10rem 0 5rem 32.5rem;
     text-align: left;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 900;
 }
 .lgx-heading {
     text-align: center;
@@ -334,7 +334,7 @@ textarea.form-control {
 }
 
 .lgx-heading .heading {
-     font-family: SEGUISBI, Poppins,sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size: 6.2rem;
     line-height: 6.300000000000001rem;
     color: #d5d2cc;
@@ -343,7 +343,7 @@ textarea.form-control {
 }
 
 .lgx-btn,.lgx-header .lgx-navbar .lgx-nav li a,.lgx-heading .subheading,.lgx-subheading,.lgx-submit,.wpcf7-submit,button {
-    font-family: SEGUILI,sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
 }
 
 .lgx-heading .subheading {
@@ -389,7 +389,7 @@ textarea.form-control {
     position: relative;
     color: #fff;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     margin: 0 auto;
     padding: 1.2rem 5rem;
     display: inline-block;
@@ -6701,7 +6701,25 @@ textarea.form-control {
     padding-right: 0;
     padding-left: 0
 }
-
+.title .header
+{
+    font-family: 'Be Vietnam', sans-serif;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25rem;
+}
+.title .subheader
+{
+     font-family: 'Be Vietnam', sans-serif;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: -2rem;
+}
 .lgx-header .lgx-navbar .lgx-nav {
     position: relative;
     -webkit-animation-name: fadeInRight;
@@ -6713,12 +6731,12 @@ textarea.form-control {
 }
 
 .lgx-header .lgx-navbar .lgx-nav li a {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     line-height: 2.4000000000000004rem;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: .06rem;
-    padding: 32px 11px;
+    padding: 32px 25px;
     color: white;
 }
 
@@ -6923,7 +6941,7 @@ textarea.form-control {
 }
 
 .menu-onscroll .lgx-nav-right .lgx-search,.lgx-header-position-white .lgx-nav-right .lgx-search a,.lgx-header-position-white .lgx-navbar .lgx-nav li a {
-    color: black;
+    color: White;
 }
 
 .lgx-header {
@@ -6981,7 +6999,7 @@ textarea.form-control {
 }
 
 .lgx-header .menu-onscroll {
-    background: black;
+    background: #c4c4c480;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7928,7 +7946,7 @@ textarea.form-control {
 }
 
 .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span {
-    background: #fda70a;
+    background: #C0533A;
 }
 
 .lgx-owlgallery,.lgx-owlspeacial {
@@ -10562,10 +10580,9 @@ textarea.form-control {
     transition-duration: .3s;
     flex: 1;
     text-align: center;
-    background-color: black;
+    background-color: #70AF76;
     overflow: hidden;
     position: relative;
-    border-radius: 16px;
     margin: 0 .8rem;
     -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
     -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
@@ -10593,7 +10610,10 @@ textarea.form-control {
 }
 
 .lgx-registration-area .lgx-single-registration .lgx-btn {
-    background: #031e50;
+    background: #C0533A;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: -1rem;
 }
 
 .lgx-registration-area .lgx-single-registration .lgx-btn:hover {
@@ -10604,6 +10624,15 @@ textarea.form-control {
     padding: 4.2rem 2rem 6.8rem;
     position: relative;
     z-index: 3
+}
+
+.single-bottom .divider_box{
+    width: 70%;
+    height: 1px;
+    margin-left: 3.5rem;
+    background-color: Black;
+    border: 0 none;
+
 }
 
 .lgx-registration-area .lgx-single-registration .single-top .title {
@@ -11104,7 +11133,7 @@ textarea.form-control {
 }
 
 #lgx-countdown span,.lgx-inner-countdown .countdown-left-info .date {
-    font-family: SEGUIBLI,sans-serif
+    font-family: 'Be Vietnam', sans-serif;
 }
 
 .lgx-inner-countdown .countdown-right {
@@ -11134,12 +11163,12 @@ textarea.form-control {
 }
 
 #lgx-countdown i {
-    font-family: SEGUIBLI,sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size: 2rem;
     line-height: 3rem;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: normal;
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);

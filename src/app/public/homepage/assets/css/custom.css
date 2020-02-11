@@ -21,7 +21,7 @@
 .slide-show {
     background-size: cover;
     width: 100%;
-    height: 89vh;
+    height: 100vh;
 }
 
 .owl-dots {
@@ -71,10 +71,10 @@
 /* .team7-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
 
 .lgx-registration-area .lgx-single-registration .lgx-single-registration-inner {
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 2rem 0rem;
     z-index: 3;
     width: 100%;
-    height: 100%;
+    height: 105%;
     position: absolute;
     /* transition: .5s; */
     /* top: 0; */
@@ -90,13 +90,19 @@
 }
 
 .single-bottom .title {
-    color: #031e50;
+    font-family: 'Be Vietnam', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: White;
     margin-bottom: 0;
 }
 
 .single-bottom p {
-    color: #031e50;
-    font-style: italic;
+    color: White;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: start;
+    padding: 3rem;
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -154,8 +160,13 @@
     background: none ;
 }
 
-h2.price {
-    font-weight: bold;
+h3.price {
+    font-weight: 100;
+    font-family: 'Be Vietnam', sans-serif;
+    text-transform: uppercase;
+    color: White;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .lgx-registration-area .lgx-single-registration:hover .single-bottom .title,
