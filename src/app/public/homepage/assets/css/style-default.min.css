@@ -8871,11 +8871,13 @@ textarea.form-control {
 
 .lgx-about-content-area .lgx-heading {
     margin-bottom: 2.6rem;
-    text-align: left
+    text-align: left;
 }
 
 .lgx-about-content-area .lgx-heading .heading {
     /* margin: 5px; */
+    text-align: left;
+    font-size: 3.5vw;
 }
 
 .lgx-about-content-area .lgx-heading .subheading {
@@ -10600,7 +10602,8 @@ textarea.form-control {
     background-color: #70AF76;
     overflow: hidden;
     position: relative;
-    margin: 0 .8rem;
+    /* height: 132%; */
+    /* margin: 0 .8rem; */
     -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
     -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
     box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
@@ -10627,14 +10630,19 @@ textarea.form-control {
 }
 
 .lgx-registration-area .lgx-single-registration .lgx-btn {
+    position: relative;
+    display: block;
+    height: 100%;
+    top: 27px;
+    /* bottom: 38%; */
     background: #C0533A;
     width: 100%;
     height: 8vh;
-    margin-bottom: -1rem;
+    /* margin-bottom: -1rem; */
 }
 
 .lgx-registration-area .lgx-single-registration .lgx-btn:hover {
-    background: #efa506
+    background: #efa506;
 }
 
 .lgx-registration-area .lgx-single-registration .lgx-single-registration-inner {
@@ -10664,6 +10672,7 @@ textarea.form-control {
 
 .single-bottom .divider_box{
     position: relative;
+    top: -170px;
     width: 70%;
     height: 1px;
     /* margin-left: 3.5rem; */
@@ -10731,7 +10740,7 @@ textarea.form-control {
 }
 
 .lgx-registration-area .lgx-single-registration:hover {
-    background-color: #031e50;
+    background-color: #026075;
     -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.3);
     -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.3);
     box-shadow: 0 1px 15px 1px rgba(52,40,104,.3);
@@ -13602,8 +13611,9 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-heading .heading {
-        font-size: 5.5rem !important;
+        font-size: 8vw !important;
         line-height: 4.5rem;
+        text-align: center !important;
         /* font-weight: Bolder !important; */
     }
 
