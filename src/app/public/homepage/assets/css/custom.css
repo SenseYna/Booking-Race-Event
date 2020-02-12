@@ -1,9 +1,9 @@
 
 .info-timelapse {
-    margin-bottom: 10px;
-    padding: 0 30px;
     font-size: 1.7rem;
-    color: #d5d2cc;
+    color: White;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: center; 
     font-weight: 400;
 }
 .kunai {
@@ -14,9 +14,9 @@
     margin-right: 10px;
 }
 
-.slide1 {background: url(../img/testimonials/lang1.jpg)}
-.slide2 {background: url(../img/testimonials/lang2.jpg)}
-.slide3 {background: url(../img/testimonials/lang3.png)}
+.slide1 {/*background: url(../img/testimonials/lang1.jpg)*/}
+.slide2 {/*background: url(../img/testimonials/lang2.jpg)*/}
+.slide3 {/*background: url(../img/testimonials/lang3.png)*/}
 
 .slide-show {
     background-size: cover;

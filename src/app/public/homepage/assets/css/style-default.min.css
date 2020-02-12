@@ -152,7 +152,7 @@ a.active,a:focus,a:hover {
 }
 
 .lgx-inner {
-    padding: 13rem 0
+    padding: 4rem 0;
 }
 
 blockquote {
@@ -297,31 +297,45 @@ textarea.form-control {
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading
 {
     font-family: 'Be Vietnam', sans-serif;
+    position: absolute;
     font-size:11rem;
     line-height: 5.5rem;
     color: #0B734D;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    display: table-caption;
+    top: 100px;
+    /* margin-top: 7rem; */
+    /* margin-bottom: 5rem; */
     text-align: left;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bolder;
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .divider_box
 {
+   /* position: relative; */
+   position: absolute;
    width: 40%;
    height: 10px;
-   margin-left: 7rem;
+   /* margin-left: 7rem; */
    background-color:#fff;
    border: 0 none;
+   /* position: absolute; */
+   left: 5%;
+   top: 32rem;
+   /* left: -27%; */
+   border: 69%;
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .subheading
 {
+    position: absolute;
     font-family: 'Be Vietnam', sans-serif;
     font-size:11rem;
     line-height: 5.5rem;
+    top: 24rem;
+    left: 20%;
+    /* top: 152%; */
     color: #0B734D;
-    margin: 10rem 0 5rem 32.5rem;
-    text-align: left;
+    /* margin: 10rem 0 5rem 32.5rem; */
+    /* text-align: left; */
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -337,8 +351,9 @@ textarea.form-control {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 6.2rem;
     line-height: 6.300000000000001rem;
-    color: #d5d2cc;
-    margin: 0 0 1rem;
+    color: White;
+    /* margin: 0 0 1rem; */
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -412,6 +427,7 @@ textarea.form-control {
     width: 200%;
     height: 13rem;
     text-transform: none;
+    top: 42rem;
     outline: 0;
     position: relative;
     text-transform: uppercase;
@@ -419,11 +435,11 @@ textarea.form-control {
     font-weight: 600;
     background: #fff;
     font-size: 5rem;
-    margin: 0rem 6rem 5rem 0rem ;
+    margin: 0rem 6rem 5rem 0rem;
     padding: 0rem;
     display: inline-block;
     letter-spacing: .1rem;
-     box-shadow: none;
+    box-shadow: none;
 }
 
 .lgx-btn:hover,.lgx-submit:hover,.wpcf7-submit:hover,button:hover {
@@ -7305,7 +7321,7 @@ textarea.form-control {
 }
 
 .lgx-banner .lgx-inner {
-    padding: 20rem 0 20rem;
+    /* padding: 20rem 0 20rem; */
 }
 
 .lgx-banner2 {
@@ -8685,10 +8701,11 @@ textarea.form-control {
 }
 
 .lgx-about {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #0B734D;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     background-position: top;
-    background: url(../img/bg0.png);
+    /* background: url(../img/bg0.png); */
 }
 
 .lgx-about2 {
@@ -8858,7 +8875,7 @@ textarea.form-control {
 }
 
 .lgx-about-content-area .lgx-heading .heading {
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .lgx-about-content-area .lgx-heading .subheading {
@@ -10626,13 +10643,32 @@ textarea.form-control {
     z-index: 3
 }
 
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+}
+.video-container .video{
+     /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+
+}
+
 .single-bottom .divider_box{
+    position: relative;
     width: 70%;
     height: 1px;
-    margin-left: 3.5rem;
+    /* margin-left: 3.5rem; */
     background-color: Black;
     border: 0 none;
-
 }
 
 .lgx-registration-area .lgx-single-registration .single-top .title {
@@ -11142,9 +11178,10 @@ textarea.form-control {
 }
 
 #lgx-countdown {
+    position: relative;
     text-align: center;
-    margin-top: 6.5em;
-    margin-left: 5rem;
+    top: 50rem;
+    left: 20%
 }
 
 #lgx-countdown span {
@@ -11351,7 +11388,6 @@ textarea.form-control {
 .lgx-countdown-simple #lgx-countdown span {
     text-align: center;
     margin-bottom: 0;
-    margin-left: 3rem;
     position: relative;
     bottom: 0;
     font-family: inherit;
@@ -13246,9 +13282,7 @@ blockquote.lgx-testi-single:before {
         margin-right: 0
     }
 
-    .lgx-about {
-        background: #fff
-    }
+
 
     .sponsors-area .single {
         width: 32%
@@ -13430,7 +13464,7 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-inner {
-        padding: 8rem 0
+        padding: 3rem 0;
     }
 
     .lgx-countdowns4 .lgx-inner {
@@ -13568,16 +13602,18 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-heading .heading {
-        font-size: 3rem !important;
+        font-size: 5.5rem !important;
         line-height: 4.5rem;
-        font-weight: 600 !important;
+        /* font-weight: Bolder !important; */
     }
 
     .lgx-heading .subheading {
-        font-size: 3rem !important;
-        margin: -10.4rem 0rem 0rem 22rem !important;
+        left: 18px !important;
+        left: 10px;
+        font-size: 5.5rem !important;
+        /* margin: -10.4rem 0rem 0rem 22rem !important; */
         line-height: 4.5rem;
-        font-weight: 600 !important;
+        /* font-weight: 900 !important; */
     }
     .lgx-banner-button .def-btn {
         width: 100%;
