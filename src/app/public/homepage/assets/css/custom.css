@@ -3,7 +3,14 @@
     font-size: 1.7rem;
     color: White;
     font-family: 'Be Vietnam', sans-serif;
-    text-align: center; 
+    text-align: left; 
+    font-weight: 400;
+}
+.time {
+    font-size: 1.7rem;
+    color: White;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: left; 
     font-weight: 400;
 }
 .kunai {
