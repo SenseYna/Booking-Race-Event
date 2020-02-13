@@ -298,28 +298,29 @@ textarea.form-control {
 {
     font-family: 'Be Vietnam', sans-serif;
     position: absolute;
-    font-size:11rem;
+    font-size: 9rem;
     line-height: 5.5rem;
     color: #0B734D;
     display: table-caption;
     top: 100px;
+    left: 10%;
     /* margin-top: 7rem; */
     /* margin-bottom: 5rem; */
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
     font-weight: bolder;
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .divider_box
 {
-   /* position: relative; */
+   position: relative;
    position: absolute;
-   width: 40%;
+   width: 34%;
    height: 10px;
    /* margin-left: 7rem; */
    background-color:#fff;
    border: 0 none;
    /* position: absolute; */
-   left: 5%;
+   left: 11%;
    top: 32rem;
    /* left: -27%; */
    border: 69%;
@@ -328,10 +329,10 @@ textarea.form-control {
 {
     position: absolute;
     font-family: 'Be Vietnam', sans-serif;
-    font-size:11rem;
+    font-size: 9rem;
     line-height: 5.5rem;
     top: 24rem;
-    left: 20%;
+    left: 25%;
     /* top: 152%; */
     color: #0B734D;
     /* margin: 10rem 0 5rem 32.5rem; */
@@ -424,19 +425,22 @@ textarea.form-control {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    width: 200%;
-    height: 13rem;
+    width: fit-content;
+    width: 143%;
+    /* width: 195%; */
+    height: 10rem;
     text-transform: none;
-    top: 42rem;
+    top: 38rem;
+    left: 10rem;
     outline: 0;
     position: relative;
     text-transform: uppercase;
     color: #0B734D;
     font-weight: 600;
     background: #fff;
-    font-size: 5rem;
-    margin: 0rem 6rem 5rem 0rem;
-    padding: 0rem;
+    font-size: 2vw;
+    /* margin: 0rem 6rem 5rem 0rem; */
+    padding: 1rem;
     display: inline-block;
     letter-spacing: .1rem;
     box-shadow: none;
@@ -7312,12 +7316,17 @@ textarea.form-control {
 }
 
 .lgx-banner {
-    background: url(../img/banner.png) center center no-repeat;
-    -webkit-background-size: cover;
+    background-image: url(../img/banner.png) center center;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    center center background: no-repeat;
+    /* background: url(../img/banner.png) center center no-repeat; */
+    /* -webkit-background-size: cover; */
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    height: 150vh;
+    width: 100%;
+    height: 72vw;
 }
 
 .lgx-banner .lgx-inner {
@@ -7921,7 +7930,7 @@ textarea.form-control {
     }
 
     .lgx-banner .lgx-inner {
-        padding: 8rem 0
+        padding: 8rem 0;
     }
 
     .slider-text-single figure img {
@@ -8876,8 +8885,8 @@ textarea.form-control {
 
 .lgx-about-content-area .lgx-heading .heading {
     /* margin: 5px; */
-    text-align: left;
-    font-size: 3.5vw;
+    text-align: center;
+    font-size: 3.4rem;
 }
 
 .lgx-about-content-area .lgx-heading .subheading {
@@ -9957,6 +9966,16 @@ textarea.form-control {
         display:block;
         padding: 2rem 0
     }
+
+    .lgx-banner{
+         background: url(../img/banner_1.png) center center no-repeat;
+         -webkit-background-size: cover;
+         -o-background-size: cover;
+         -moz-background-size: cover;
+         height: 100vh;
+    }
+    
+
 
     .lgx-panel .lgx-single-schedule .author {
         max-width: 100%;
@@ -11189,8 +11208,8 @@ textarea.form-control {
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 50rem;
-    left: 20%
+    top: 40rem;
+    left: 15rem;
 }
 
 #lgx-countdown span {
@@ -11431,9 +11450,9 @@ textarea.form-control {
 
     #lgx-countdown span {
         font-size: 4.2rem;
-        line-height: 6.300000000000001rem;
+        /* line-height: 6.300000000000001rem; */
         bottom: 0;
-        margin-right: 2rem
+        /* margin-right: 2rem; */
     }
 
     #lgx-countdown i {
@@ -11464,6 +11483,7 @@ textarea.form-control {
 
     #lgx-countdown {
         display: inline-block;
+        left: 32px;
     }
 
     .lgx-countdowns-banner-bottom {
@@ -13610,8 +13630,8 @@ blockquote.lgx-testi-single:before {
         font-size: 50%
     }
 
-    .lgx-heading .heading {
-        font-size: 8vw !important;
+    .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading {
+        font-size: 5.5rem !important;
         line-height: 4.5rem;
         text-align: center !important;
         /* font-weight: Bolder !important; */
@@ -13627,9 +13647,10 @@ blockquote.lgx-testi-single:before {
     }
     .lgx-banner-button .def-btn {
         width: 100%;
+        left: 0px;
         font-size: 3rem;
-        margin-right: 0rem;
-        margin-bottom: 0rem;
+        /* margin-right: 0rem; */
+        /* margin-bottom: 0rem; */
     }
 
     .lgx-video-area figure figcaption .video-icon i {
