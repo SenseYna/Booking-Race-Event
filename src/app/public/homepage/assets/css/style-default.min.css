@@ -342,10 +342,10 @@ textarea.form-control {
 }
 .lgx-heading {
     text-align: center;
-    margin-bottom: 6.8rem;
+    /* margin-bottom: 6.8rem; */
     overflow: hidden;
     display: block;
-    margin-top: -1.6rem
+    margin-top: -1.6rem;
 }
 
 .lgx-heading .heading {
@@ -7325,8 +7325,10 @@ textarea.form-control {
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    background-position-y: -238px;
+    /* background-position-x: 30%; */
     width: 100%;
-    height: 72vw;
+    height: 50vw;
 }
 
 .lgx-banner .lgx-inner {
@@ -10673,8 +10675,8 @@ textarea.form-control {
 .video-container{
     position: relative;
     width: 100%;
-    height: 80vh; 
     overflow: hidden;
+    height: 52vw;
 }
 .video-container .video{
      /* Make video to at least 100% wide and tall */
@@ -12711,9 +12713,9 @@ blockquote.lgx-testi-single:before {
 }
 
 .lgx-footer-area {
-    display: flex;
+    /* display: flex; */
     overflow: hidden;
-    padding: 6.8rem 0
+    padding: 6.8rem 0;
 }
 
 .lgx-footer-single {
@@ -12721,8 +12723,8 @@ blockquote.lgx-testi-single:before {
     text-align: center;
     color: rgba(255,255,255,.5);
     display: block;
-    margin-left: 15px;
-    margin-right: 15px;
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
 }
 
 .lgx-footer-single .text {
@@ -13516,11 +13518,11 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-heading,.lgx-travelinfo-single {
-        margin-bottom: 4.2rem
+        margin-bottom: 4.2rem;
     }
 
     .sponsors-area .single {
-        width: 48%
+        width: 80%;
     }
 
     .lgx-gallery-area .lgx-gallery-single {
