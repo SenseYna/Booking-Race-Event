@@ -92,55 +92,23 @@
 
     <body>
     
-    <div class="container d-flex align-items-stretch">
-      <nav id="sidebar" class="img" style="background-image: url(images/bg_1.jpg);">
-        <div class="p-4" style="position: fixed;">
-          <h1><a href="#first-section" class="logo"> <span>Chiến dịch</span></a></h1>
-          <ul class="list-unstyled components mb-5">
-            <li>
-              <a href="#first-section-intro"><span class="fa fa-home mr-3"></span> Giới thiệu</a>
-            </li>
-            <li>
-                <a href="#first-section-message"><span class="fa fa-paper-plane mr-3"></span> Thông điệp</a>
-            </li>
-            <li>
-               <a href="#first-section-piece"><span class="fa fa-puzzle-piece mr-3"></span> Mảnh ghép xanh</a>
-            </li>
-            <li>
-              <a href="#first-section-knowledge"><span class="fa fa-lightbulb-o mr-3"></span> Tri thức mới</a>
-            </li>
-          
-          </ul>
+   
+    <div class="container">
+      <div class="sidebar">
+        <h1 class="title"><a href="#first-section" > <span>Chiến dịch</span></a></h1>
+        <a  href="#first-section-intro"><span class="fa fa-home mr-3"></span> Giới thiệu</a>
+        <a href="#first-section-message"><span class="fa fa-paper-plane mr-3"></span> Thông điệp</a>
+         <a href="#first-section-piece"><span class="fa fa-puzzle-piece mr-3"></span> Mảnh ghép xanh</a>
+        <a href="#first-section-knowledge"><span class="fa fa-lightbulb-o mr-3"></span> Tri thức mới</a>
 
-           <h1><a href="#second-section" class="logo"> <span>Đường chạy</span></a></h1>
-          <ul class="list-unstyled components mb-5">
-            <li>
-              <a href="#second-section-intro"><span class="fa fa-home mr-3"></span> Giới thiệu</a>
-            </li>
-            <li>
-                <a href="#second-section-message"><span class="fa fa-paper-plane mr-3"></span> Thông điệp</a>
-            </li>
-            <li>
-              <a href="#second-section-goal"><span class="fa fa-bullseye mr-3"></span> Mục tiêu</a>
-            </li>
-          
-          
-          </ul>
+        <h1 class="title"><a href="#second-section" > <span>Đường chạy</span></a></h1>
+        <a href="#second-section-intro"><span class="fa fa-home mr-3"></span> Giới thiệu</a>
+        <a href="#second-section-section-message"><span class="fa fa-paper-plane mr-3"></span> Thông điệp</a>
+         <a href="#second-section-goal"><span class="fa fa-bullseye mr-3"></span> Mục tiêu</a>
+      </div>
 
-         
-
-          <div class="footer">
-            <p>
-             <p> <span>©</span> 2020 ƯƠM MẦM VÀ CHĂM SÓC BỞI<br> <a href="https://www.facebook.com/ManhGhepMoi.Fanpage/">Chiến dịch Tình nguyện<br> Mảnh Ghép Mới</a>.</p>
-            </p>
-          </div>
-
-        </div>
-      </nav>
-
-        <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4" id="first-section">Chiến dịch<br> tình nguyện<br> Mảnh Ghép Mới</h2>
+<div class="content">
+ <h2 class="mb-4" id="first-section">Chiến dịch<br> tình nguyện<br> Mảnh Ghép Mới</h2>
         <h1>
          <div class="section-divider">
           <h1 class="section-text" id="first-section-intro">Giới thiệu</h1>
@@ -200,7 +168,8 @@
       </div>
 
     </div>
-    </div>
+</div>
+</div>
 
    
   </body>
@@ -230,7 +199,7 @@
     html = document.documentElement;
     var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-    height*=0.94;
+  
     $('body').append('<style>.logo-rectangle:after{height:' + (height) +  'px;}</style>');
   
     </script>
