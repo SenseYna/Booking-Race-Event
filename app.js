@@ -11,7 +11,8 @@ var config = require("./src/config");
 require('./src/model/connect.js');
 require('./src/model/schema');
 
-isEarlyBird = true
+isEarlyBird = false
+vipTicket = 12;
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'src', 'app', 'views'));
