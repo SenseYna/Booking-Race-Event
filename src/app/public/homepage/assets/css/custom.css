@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 .info-timelapse {
     font-size: 1.7rem;
@@ -53,7 +54,7 @@
 }
 
 .minato-price {
-    min-height: 450px;
+    min-height: 500px;
 }
 
 /* .minato-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
@@ -63,7 +64,7 @@
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
     /* background-position: center; */
-    min-height: 450px;
+    min-height: 500px;
 }
 
 /* .genin-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
@@ -74,7 +75,7 @@
     /* background-repeat: no-repeat; */
     /* background-position: center; */
     /* background-color: #fca300; */
-    min-height: 450px;
+    min-height: 500px;
 }
 
 /* .team7-price::before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
@@ -86,12 +87,12 @@
     height: 100%;
     position: absolute;
     /* transition: .5s; */
-    /* top: 0; */
+    top: 0;
 }
 
 .single-bottom {
     position: absolute;
-    bottom: 6%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -124,7 +125,7 @@
 
 .single-top {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -172,7 +173,7 @@
 }
 
 .lgx-sponsors .lgx-inner {
-    background: none ;
+    background: #0C1C65;
 }
 
 h3.price {
@@ -197,7 +198,7 @@ h3.price {
 }
 
 .lgx-header .menu-onscroll .lgx-nav-right .lgx-cart-area button {
-    background: #fda70a;
+    background: #0b734d;
 }
 
 .cover-box {

@@ -12,7 +12,7 @@ body,p {
     font-size: 1.6rem;
     padding: 0;
     margin: 0;
-    color: #d5d2cc;
+    color: #cdd5cc;
     line-height: 2.6rem;
 }
 
@@ -152,7 +152,7 @@ a.active,a:focus,a:hover {
 }
 
 .lgx-inner {
-    padding: 4rem 0;
+    padding: 0px 0 6rem;
 }
 
 blockquote {
@@ -296,25 +296,71 @@ textarea.form-control {
 }
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading
 {
+    /* margin: 0px 0; */
+    background-color: #0b734db3;
+    padding: 0px 10px 0px 10px;
+    border: 3px solid #0b734d;
+    /* border: aliceblue; */
+    /* background-color: red; */
+    /* border-color: white; */
+    /* border-width: medium; */
     font-family: 'Be Vietnam', sans-serif;
     position: absolute;
-    font-size: 9rem;
-    line-height: 5.5rem;
+    font-size: 3rem;
+    /* line-height: 6rem; */
+    color: #c84a3a;
+    display: inline-block;
+    top: 292%;
+    left: 6%;
+    /* margin-top: 7rem; */
+    /* margin-bottom: 5rem; */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 0 0 4px #000000;
+}
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading2
+{
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    font-size: 2rem;
+    /* line-height: 4.5rem; */
     color: #0B734D;
     display: table-caption;
-    top: 100px;
-    left: 10%;
+    top: 440px;
+    word-spacing: 3.4vw;
+    left: 3.5%;
     /* margin-top: 7rem; */
     /* margin-bottom: 5rem; */
     text-align: right;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: bolder;
+    background-color: #ffffffc2;
 }
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .heading3
+{
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    font-size: 2rem;
+    /* line-height: 4.5rem; */
+    color: #0B734D;
+    display: table-caption;
+    top: 440px;
+    word-spacing: 3.4vw;
+    left: 3.5%;
+    /* margin-top: 7rem; */
+    /* margin-bottom: 5rem; */
+    text-align: right;
+    /* text-transform: uppercase; */
+    font-weight: bolder;
+    background-color: #ffffffc2;
+}
+
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .divider_box
 {
    position: relative;
    position: absolute;
-   width: 34%;
+   width: 43%;
    height: 10px;
    /* margin-left: 7rem; */
    background-color:#fff;
@@ -325,20 +371,37 @@ textarea.form-control {
    /* left: -27%; */
    border: 69%;
 }
+.lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .divider_box1
+{
+   position: relative;
+   position: absolute;
+   width: 43%;
+   height: 10px;
+   /* margin-left: 7rem; */
+   background-color:#fff;
+   border: 0 none;
+   /* position: absolute; */
+   left: 11%;
+   top: 32rem;
+   /* left: -27%; */
+   border: 69%;
+}
+
 .lgx-banner .lgx-banner-style .lgx-inner .lgx-heading .subheading
 {
     position: absolute;
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 9rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: 19rem;
     line-height: 5.5rem;
-    top: 24rem;
-    left: 25%;
+    top: 908%;
+    left: 17%;
     /* top: 152%; */
-    color: #0B734D;
+    color: #0b734d;
     /* margin: 10rem 0 5rem 32.5rem; */
     /* text-align: left; */
     text-transform: uppercase;
     font-weight: 900;
+    text-shadow: 0 0 20px #000000;
 }
 .lgx-heading {
     text-align: center;
@@ -351,7 +414,7 @@ textarea.form-control {
 .lgx-heading .heading {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 6.2rem;
-    line-height: 6.300000000000001rem;
+    /* line-height: 6.300000000000001rem; */
     color: White;
     /* margin: 0 0 1rem; */
     text-align: center;
@@ -398,7 +461,7 @@ textarea.form-control {
     overflow: hidden;
     border: none;
     text-align: center;
-    border-radius: 0;
+    border-radius: 0px;
     cursor: pointer;
     text-transform: uppercase;
     outline: 0;
@@ -410,7 +473,7 @@ textarea.form-control {
     padding: 1.2rem 5rem;
     display: inline-block;
     letter-spacing: .1rem;
-    background: #C0533A;
+    background: #0b734d;
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
@@ -448,12 +511,12 @@ textarea.form-control {
 
 .lgx-btn:hover,.lgx-submit:hover,.wpcf7-submit:hover,button:hover {
     color: #fff;
-    border-radius: 16px;
+    border-radius: 0px;
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
     transition-duration: .3s;
-    box-shadow: 0 8px 15px rgba(0,0,0,.1)
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
 }
 
 .lgx-btn-white,.lgx-btn-white:hover {
@@ -6724,7 +6787,7 @@ textarea.form-control {
 .title .header
 {
     font-family: 'Be Vietnam', sans-serif;
-    color: white;
+    color: #ffffff;
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
@@ -6733,12 +6796,12 @@ textarea.form-control {
 .title .subheader
 {
      font-family: 'Be Vietnam', sans-serif;
-    color: white;
-    font-size: 6rem;
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-top: -2rem;
+     color: #ffffff;
+     font-size: 6rem;
+     text-align: center;
+     font-weight: bolder;
+     text-transform: uppercase;
+     margin-top: -2rem;
 }
 .lgx-header .lgx-navbar .lgx-nav {
     position: relative;
@@ -6762,8 +6825,8 @@ textarea.form-control {
 
 .lgx-header .lgx-navbar .lgx-nav li a:hover {
     background: 0 0;
-    color: #554bb9;
-    opacity: 1
+    color: #0b734d;
+    opacity: 1;
 }
 
 .lgx-header .lgx-navbar .lgx-nav .active a {
@@ -6839,7 +6902,7 @@ textarea.form-control {
 }
 
 .lgx-header .lgx-nav-right {
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 20px;
     margin-left: 2rem;
     display: flex;
@@ -6961,7 +7024,7 @@ textarea.form-control {
 }
 
 .menu-onscroll .lgx-nav-right .lgx-search,.lgx-header-position-white .lgx-nav-right .lgx-search a,.lgx-header-position-white .lgx-navbar .lgx-nav li a {
-    color: White;
+    color: #fafafa;
 }
 
 .lgx-header {
@@ -7019,7 +7082,7 @@ textarea.form-control {
 }
 
 .lgx-header .menu-onscroll {
-    background: #c4c4c480;
+    background: #ffffffad;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7031,7 +7094,7 @@ textarea.form-control {
     -moz-box-shadow: 0 10px 20px -12px rgba(0,0,0,.42),0 3px 20px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
     -webkit-box-shadow: 0 10px 20px -12px rgba(0,0,0,.42),0 3px 20px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
     -o-box-shadow: 0 10px 20px -12px rgba(0,0,0,.42),0 3px 20px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
-    box-shadow: 0 10px 20px -12px rgba(0,0,0,.42),0 3px 20px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2)
+    box-shadow: 0 10px 20px -12px rgba(0,0,0,.42),0 3px 20px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
 }
 
 .lgx-header .menu-onscroll .lgx-nav-right .lgx-search a {
@@ -7061,7 +7124,7 @@ textarea.form-control {
 }
 
 .lgx-header .menu-onscroll .lgx-navbar .lgx-nav li a {
-    color: #fff
+    color: #0b734d;
 }
 
 .lgx-header .menu-onscroll .lgx-navbar .lgx-nav li a:hover {
@@ -7325,10 +7388,10 @@ textarea.form-control {
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-position-y: -238px;
+    background-position-y: -6px;
     /* background-position-x: 30%; */
     width: 100%;
-    height: 50vw;
+    height: 49vw;
 }
 
 .lgx-banner .lgx-inner {
@@ -10614,13 +10677,15 @@ textarea.form-control {
 }
 
 .lgx-registration-area .lgx-single-registration {
+    margin-left: 37px;
+    margin-right: 37px;
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
     transition-duration: .3s;
     flex: 1;
     text-align: center;
-    background-color: #70AF76;
+    background-color: #0b734d;
     overflow: hidden;
     position: relative;
     /* height: 132%; */
@@ -10654,7 +10719,7 @@ textarea.form-control {
     position: relative;
     display: block;
     height: 100%;
-    top: 27px;
+    top: 50px;
     /* bottom: 38%; */
     background: #C0533A;
     width: 100%;
@@ -10893,6 +10958,7 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .lgx-registration-area .lgx-single-registration-christmas {
@@ -11210,7 +11276,7 @@ textarea.form-control {
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 40rem;
+    top: 55rem;
     left: 15rem;
 }
 
@@ -13622,6 +13688,208 @@ blockquote.lgx-testi-single:before {
         width: 98%
     }
 }
+
+.lgx-diagram {
+    background: #0B734D;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;    
+    /* background-size: contain; */
+}
+
+.lgx-diagram .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lgx-diagram .lgx-inner {
+    background: rgba(255,255,255,.88)
+}
+
+.diagram-area {
+    text-align: center
+}
+
+.diagram-area .single {
+    overflow: hidden;
+    margin: 0 .5% .6rem;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 23%;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.05)
+}
+
+.diagram-area .single a {
+    display: block;
+    text-align: center
+}
+
+.diagram-diagram .single a img {
+    width: 100%
+}
+
+.diagram-area .single:hover {
+    opacity: 1
+}
+
+.diagram-area-col3 .single {
+    width: 90%
+}
+
+.diagram-area-nogap .single {
+    margin: 0 0 2px;
+    display: inline-table
+}
+
+.diagram-area-border .single {
+    border: 5px solid #ddd
+}
+
+.lgx-racekit {
+    background: #136397;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;    
+    /* background-size: contain; */
+}
+
+.lgx-racekit .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lgx-racekit .lgx-inner {
+    background: rgba(255,255,255,.88)
+}
+
+.racekit-area {
+    text-align: center
+}
+
+.racekit-area .single {
+    overflow: hidden;
+    margin: 0 .5% .6rem;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 23%;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.05)
+}
+
+.racekit-area .single a {
+    display: block;
+    text-align: center
+}
+
+.diagram-diagram .single a img {
+    width: 100%
+}
+
+.racekit-area .single:hover {
+    opacity: 1
+}
+
+.racekit-area-col3 .single {
+    width: 90%
+}
+
+.racekit-area-nogap .single {
+    margin: 0 0 2px;
+    display: inline-table
+}
+
+.racekit-area-border .single {
+    border: 5px solid #ddd
+}
+
+.lgx-item {
+    background: #2686c5;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;    
+    /* background-size: contain; */
+}
+
+.lgx-item .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lgx-item .lgx-inner {
+    background: rgba(255,255,255,.88)
+}
+
+.item-area {
+    text-align: center
+}
+
+.item-area .single {
+    overflow: hidden;
+    margin: 0 .5% .6rem;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 23%;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    -moz-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.05);
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.05)
+}
+
+.item-area .single a {
+    display: block;
+    text-align: center
+}
+
+.item-item .single a img {
+    width: 100%
+}
+
+.item-area .single:hover {
+    opacity: 1
+}
+
+.item-area-col3 .single {
+    width: 90%
+}
+
+.item-area-nogap .single {
+    margin: 0 0 2px;
+    display: inline-table
+}
+
+.item-area-border .single {
+    border: 5px solid #ddd
+}
+
+
+
+
 
 @media (max-width: 480px) {
     .lgx-inner-countdown,.lgx-subscribe-form {
