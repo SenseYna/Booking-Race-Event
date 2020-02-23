@@ -157,7 +157,7 @@ a.active,a:focus,a:hover {
 }
 .time-heading {
     position: absolute;
-    top: 39vw;
+    top: 36vw;
     left: 9vw;
     font-size: 1.5vw;
     color: white;
@@ -11311,7 +11311,7 @@ left: 4vw;
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 40vw;
+    top: 37vw;
     /* bottom: 60%; */
     left: 8rem;
 }
@@ -11550,7 +11550,7 @@ left: 4vw;
     #lgx-countdown {
         display:inline-block;
         /* margin-bottom: 2.6rem; */
-        top: 46rem;
+        top: 42rem;
         left: 0rem;
     }
 
