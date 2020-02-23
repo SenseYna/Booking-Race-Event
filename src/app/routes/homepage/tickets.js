@@ -29,10 +29,20 @@ const tickets = async (req, res, next) => {
       },
       moment
     });
+
+   
+   if(ticket.name=="Vé VVip")
+   {
+    vipTicket-=1;
+   }
+  
+
+    
+
     Send(newTickets.email, "[Chiến dịch Tình nguyện Mảnh Ghép Mới] - Xác nhận Đăng ký vé và hướng dẫn thanh toán ", html);
 
     const ticketCategories = await mongoose.model("ticketCategories").find();
-    return res.render('homepage/index', { ticketCategories, isEarlyBird, isOk: true });
+    return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: true });
     // return res.redirect("/")
   } catch (err) {
     next(err);

@@ -9,6 +9,9 @@ var ticketCategories = new mongoose.Schema(
     prices: {
       type: String
     },
+     types: {
+      type: String
+    },
     time: {
       type: Number,
       default: 1
