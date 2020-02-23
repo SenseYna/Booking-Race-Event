@@ -154,6 +154,13 @@ a.active,a:focus,a:hover {
 .lgx-inner {
     padding: 0px 0 6rem;
 }
+.time-heading {
+    position: absolute;
+    top: 39vw;
+    left: 9vw;
+    font-size: 1.5vw;
+    color: white;
+}
 
 blockquote {
     overflow: hidden;
@@ -7280,6 +7287,14 @@ textarea.form-control {
         position: static;
         margin-top: 0
     }
+    .time-heading{
+        
+top: 21vw;
+        
+font-size: 2vw;
+        
+left: 4vw;
+    }
 
     .lgx-header .lgx-navbar .lgx-logo,.lgx-header .lgx-navbar .lgx-logo-default {
         margin-top: 0
@@ -10033,11 +10048,11 @@ textarea.form-control {
     }
 
     .lgx-banner{
-         background: url(../img/banner_1.png) center center no-repeat;
+         /* background: url(../img/banner_1.png) center center no-repeat; */
          -webkit-background-size: cover;
          -o-background-size: cover;
          -moz-background-size: cover;
-         height: 100vh;
+         /* height: 100vh; */
     }
     
 
@@ -11276,8 +11291,9 @@ textarea.form-control {
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 55rem;
-    left: 15rem;
+    top: 40vw;
+    /* bottom: 60%; */
+    left: 8rem;
 }
 
 #lgx-countdown span {
@@ -11487,11 +11503,11 @@ textarea.form-control {
     position: relative;
     bottom: 0;
     font-family: inherit;
-    font-size: 7rem;
+    font-size: 5vw;
 }
 
 .lgx-countdown-simple #lgx-countdown span:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .lgx-countdown-simple #lgx-countdown i {
@@ -11513,11 +11529,14 @@ textarea.form-control {
 @media (max-width: 1199px) {
     #lgx-countdown {
         display:inline-block;
-        margin-bottom: 2.6rem;
+        /* margin-bottom: 2.6rem; */
+        top: 46rem;
+        left: 0rem;
     }
 
     #lgx-countdown span {
         font-size: 4.2rem;
+        left: 5.5vw;
         /* line-height: 6.300000000000001rem; */
         bottom: 0;
         /* margin-right: 2rem; */
@@ -11545,13 +11564,15 @@ textarea.form-control {
     }
 
     #lgx-countdown i {
-        font-size: 1.4rem;
-        line-height: 2.0999999999999996rem
+        font-size: 1.5vw !important;
+        line-height: 1.1rem;
+        left: 2vw !important;
     }
 
     #lgx-countdown {
         display: inline-block;
-        left: 32px;
+        left: -2vw;
+        top: 17vw;
     }
 
     .lgx-countdowns-banner-bottom {
@@ -13675,9 +13696,9 @@ blockquote.lgx-testi-single:before {
 
     .lgx-countdown-simple #lgx-countdown span {
         margin-right: 0rem;
-        font-size: 5rem;
+        font-size: 5vw;
         margin-left: 0rem;
-        line-height: 6rem;
+        /* line-height: 6rem; */
     }
 
     .lgx-banner-info-christmas .lgx-countdown-area,.lgx-banner-info-comingsoon .lgx-countdown-area {
@@ -13978,6 +13999,21 @@ blockquote.lgx-testi-single:before {
 }
     
 
-@media (max-width: 480px){
+@media (max-width: 375px){
 
+    .time-heading{
+
+top: 20vw;
+
+left: 5vw;
+
+}
+    #lgx-countdown{
+        
+display: inline-block;
+        
+left: -2vw;
+        
+top: 13vw;
+    }
 }
