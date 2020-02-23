@@ -7402,10 +7402,10 @@ left: 4vw;
 
 .lgx-banner {
     background-image: url(../img/banner.png) center center;
-    background-image: url(../img/banner.png);
+    /* background-image: url(../img/banner.png); */
     background-repeat: no-repeat;
     background: no-repeat;
-    /* background: url(../img/banner.png) center center no-repeat; */
+    background: url(../img/banner.png) center center no-repeat;
     /* -webkit-background-size: cover; */
     -o-background-size: cover;
     -moz-background-size: cover;
