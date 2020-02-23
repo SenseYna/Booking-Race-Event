@@ -148,11 +148,11 @@ div.content {
  
   .logo-rectangle{
 
-      visibility: hidden;
+      overflow: hidden;
 
   } 
   .section-divider:after {
-    visibility: hidden;
+    overflow: hidden;
   } 
   .container{
     width: auto;
