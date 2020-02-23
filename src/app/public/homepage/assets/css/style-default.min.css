@@ -7,6 +7,7 @@ html {
     font-size: 62.5%
 }
 
+
 body,p {
     font-family: Poppins,sans-serif;
     font-size: 1.6rem;
@@ -408,7 +409,7 @@ textarea.form-control {
     /* margin-bottom: 6.8rem; */
     overflow: hidden;
     display: block;
-    margin-top: -1.6rem;
+    margin-top: 0rem;
 }
 
 .lgx-heading .heading {
@@ -461,7 +462,7 @@ textarea.form-control {
     overflow: hidden;
     border: none;
     text-align: center;
-    border-radius: 0px;
+    /* border-radius: 10px; */
     cursor: pointer;
     text-transform: uppercase;
     outline: 0;
@@ -510,8 +511,8 @@ textarea.form-control {
 }
 
 .lgx-btn:hover,.lgx-submit:hover,.wpcf7-submit:hover,button:hover {
-    color: #fff;
-    border-radius: 0px;
+    color: #ffffff9e;
+    /* border-radius: 10px; */
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
@@ -6810,21 +6811,27 @@ textarea.form-control {
     -webkit-transform-origin: center;
     transform-origin: center;
     animation-duration: .4s;
-    animation-timing-function: linear
+    animation-timing-function: linear;
+    padding-top: 15px;
 }
 
 .lgx-header .lgx-navbar .lgx-nav li a {
     font-size: 2.0rem;
-    line-height: 2.4000000000000004rem;
+    line-height: 0.4rem;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: .06rem;
-    padding: 32px 25px;
+    padding: 23px 14px;
     color: white;
+    margin: 4px 11px;
+    /* border-radius: 0px; */
 }
 
 .lgx-header .lgx-navbar .lgx-nav li a:hover {
-    background: 0 0;
+    background: none;
+    border: 1px solid #ffffff0d;
+    border-radius: 8px;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.08);
     color: #0b734d;
     opacity: 1;
 }
@@ -7024,7 +7031,7 @@ textarea.form-control {
 }
 
 .menu-onscroll .lgx-nav-right .lgx-search,.lgx-header-position-white .lgx-nav-right .lgx-search a,.lgx-header-position-white .lgx-navbar .lgx-nav li a {
-    color: #fafafa;
+    color: #0b734d;
 }
 
 .lgx-header {
@@ -7382,7 +7389,7 @@ textarea.form-control {
     background-image: url(../img/banner.png) center center;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    center center background: no-repeat;
+    background: no-repeat;
     /* background: url(../img/banner.png) center center no-repeat; */
     /* -webkit-background-size: cover; */
     -o-background-size: cover;
@@ -10163,8 +10170,20 @@ textarea.form-control {
     animation-timing-function: linear
 }
 
+.sponsors-area-col12 .single {
+    width: 100%
+}
+.sponsors-area-col8 .single {
+    width: 88%
+}
+.sponsors-area-col6 .single {
+    width: 50%
+}
+.sponsors-area-col4 .single {
+    width: 33%
+}
 .sponsors-area-col3 .single {
-    width: 32%
+    width: 25%
 }
 
 .sponsors-area-nogap .single {
@@ -10694,6 +10713,7 @@ textarea.form-control {
     -webkit-box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
     box-shadow: 0 1px 15px 1px rgba(52,40,104,.1);
     transition: .4s;
+    border-radius: 10px;
 }
 
 .lgx-registration-area .lgx-single-registration:after {
@@ -11448,7 +11468,7 @@ textarea.form-control {
 
 .lgx-countdown-area-squre #lgx-countdown .lgx-days {
     color: #fff;
-    background: #fac400
+    background: #fac400;
     font-style:UTM Avo;
 }
 
@@ -13123,6 +13143,7 @@ blockquote.lgx-testi-single:before {
     color: inherit
 }
 
+
 .lgx-post-wrapper .speaker-info .subtitle {
     font-family: Poppins,sans-serif;
     font-size: 1.6rem;
@@ -13468,7 +13489,7 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-btn {
-        padding: 1rem 2.6rem
+        padding: 1rem 0rem;
     }
 
     .lgx-banner-info-circle .info-circle-inner {
@@ -13561,7 +13582,7 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-inner {
-        padding: 3rem 0;
+        padding: 0rem 0;
     }
 
     .lgx-countdowns4 .lgx-inner {
