@@ -157,10 +157,10 @@ a.active,a:focus,a:hover {
 }
 .time-heading {
     position: absolute;
-    top: 36vw;
-    left: 9vw;
+    top: 34vw;
+    left: 8vw;
     font-size: 1.5vw;
-    color: white;
+    color: #ffffffcf;
 }
 
 blockquote {
@@ -7540,8 +7540,7 @@ left: 4vw;
     text-align: center;
     color: #fff;
     position: absolute;
-    top:100%
-   
+    top:100%;
 }
 
 .lgx-banner-info .circular-countdown-area {
@@ -11310,7 +11309,7 @@ left: 4vw;
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 37vw;
+    top: 36vw;
     /* bottom: 60%; */
     left: 8rem;
 }
