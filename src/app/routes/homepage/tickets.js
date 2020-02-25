@@ -14,7 +14,8 @@ const tickets = async (req, res, next) => {
         "fullname",
         "numberphone",
         "quanlity",
-        "ticketId"
+        "ticketId",
+        "isHaveKit"
       ])
     };
     const newTickets = await mongoose.model("tickets").create(insert);
