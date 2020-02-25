@@ -58,6 +58,7 @@
                         <th>Số lượng</th>
                         <th>Times</th>
                         <th>Trạng thái</th>
+                        <th>Running kit</th>
                         <th></th>
                       </tr>
                     </thead>
@@ -79,6 +80,7 @@
                           <span class="badge badge-danger">Waiting</span>
                           <% } %>
                         </td>
+                        <td><%- item.isHaveKit %></td>
                         <td>
                           <% if (!item.isActive) { %>
                           <button

@@ -7296,7 +7296,7 @@ textarea.form-control {
     }
     .time-heading{
         
-top: 21vw;
+top: 17vw;
         
 font-size: 2vw;
         
@@ -11549,7 +11549,7 @@ left: 4vw;
     #lgx-countdown {
         display:inline-block;
         /* margin-bottom: 2.6rem; */
-        top: 46rem;
+        top: 42rem;
         left: 0rem;
     }
 
@@ -11591,7 +11591,7 @@ left: 4vw;
     #lgx-countdown {
         display: inline-block;
         left: -2vw;
-        top: 17vw;
+        top: 14vw;
     }
 
     .lgx-countdowns-banner-bottom {
@@ -13602,7 +13602,7 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-inner {
-        padding: 0rem 0;
+        padding: 3rem 0;
     }
 
     .lgx-countdowns4 .lgx-inner {
@@ -14023,10 +14023,9 @@ blockquote.lgx-testi-single:before {
 
     .time-heading{
 
-top: 20vw;
+top: 15vw;
 
 left: 5vw;
-
 }
     #lgx-countdown{
         
@@ -14034,6 +14033,6 @@ display: inline-block;
         
 left: -2vw;
         
-top: 13vw;
+top: 10vw;
     }
 }

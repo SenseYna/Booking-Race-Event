@@ -15,6 +15,10 @@ var tickets = new mongoose.Schema(
       type: Boolean,
       default: false
     },
+    isHaveKit:{
+      type: Boolean,
+      default:false
+    },
     ticketId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "ticketCategories"
