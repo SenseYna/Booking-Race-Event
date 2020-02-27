@@ -18,6 +18,8 @@ const tickets = async (req, res, next) => {
         "isHaveKit"
       ])
     };
+
+  
     const newTickets = await mongoose.model("tickets").create(insert);
     const ticket = await mongoose.model("ticketCategories").findById(req.body.ticketId);
 
@@ -30,6 +32,8 @@ const tickets = async (req, res, next) => {
       },
       moment
     });
+
+
 
    
    if(ticket.name=="Vé VVip")
