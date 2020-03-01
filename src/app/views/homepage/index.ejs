@@ -481,7 +481,7 @@
     <div id="lgx-registration" class="lgx-registration">
       <!--lgx-registration2 lgx-registration3 lgx-registration4-->
       <div class="lgx-inner">
-        <div class="container">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <h2 class="heading"
@@ -798,13 +798,13 @@
                 placeholder="Dao Huu Xanh" />
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Vật dụng đính kèm tùy chọn</label>
-              <label><img src="https://tuivaibo.vn/wp-content/uploads/2017/06/tui-vai-khong-det-day-rut.jpg"
-                  style="width: 30%; height:auto"></img></label>
-              <select class="form-control" id="exampleFormControlSelect1" name="isHaveKit" required>
+              <label for="exampleFormControlSelect">Bạn có muốn mua túi rút MGM cho đường chạy? (Chỉ 59.000đ)</label>
+              <select class="form-control" id="exampleFormControlSelect" name="isHaveKit" required>
                 <option value="true">Có</option>
                 <option value="false">Không</option>
               </select>
+              <label><img src="https://tuivaibo.vn/wp-content/uploads/2017/06/tui-vai-khong-det-day-rut.jpg"
+                  style="width: 30%; height:auto"></img></label>
             </div>
 
 
@@ -814,15 +814,8 @@
                 placeholder="0982 654 767" />
             </div>
             <div class="form-group">
-              <label for="quanlity">Số lượng vé</label>
-              <input type="number" class="lgx-input-form form-control" id="quanlity" name="quanlity" required
-                placeholder="1" value="1" readonly />
-            </div>
-
-            <div class="form-group">
               <label for="exampleFormControlSelect1">Loại vé</label>
               <select class="form-control" id="exampleFormControlSelect1" name="ticketId" required>
-
                 <% if(!isEarlyBird) { %>
                 <% ticketCategories.map((item, index) => { %>
                 <option value="<%- item._id %>"><%- item.name %> (<%- item.prices %>.000 VND)</option>
@@ -832,6 +825,11 @@
                   (<%- ticketCategories[0].prices %>.000 VND)</option>
                 <% } %>
               </select>
+            </div>
+             <div class="form-group">
+              <label for="quanlity">Số lượng vé</label>
+              <input type="number" class="lgx-input-form form-control" id="quanlity" name="quanlity" required
+                placeholder="1" min="1"  />
             </div>
             <div class="">
               <p style=" font-weight: 500; color: #ea0202; font-family: initial; ">Sau khi đăng kí vui
@@ -931,6 +929,25 @@
   </script>
   <!-- CUSTOM SCRIPT  -->
   <script src="/homepage/assets/js/custom.script.js"></script>
+  <script type="text/javascript">
+     
+      var elX = document.getElementById("exampleFormControlSelect1");
+      var elY = document.getElementById("quanlity");
+        
+
+
+    function limit() {
+        var strUser=elX.options[elX.selectedIndex].value;
+        
+        if(strUser!='5e54cde51d9da04f443b7a81')
+              elY.value=1;
+           
+
+    }
+
+    elX.onchange=limit;
+    elY.onchange=limit;
+  </script>
 
 
 

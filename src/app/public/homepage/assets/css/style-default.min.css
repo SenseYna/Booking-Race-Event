@@ -157,10 +157,10 @@ a.active,a:focus,a:hover {
 }
 .time-heading {
     position: absolute;
-    top: 34vw;
-    left: 8vw;
+    top: 36vw;
+    left: 9vw;
     font-size: 1.5vw;
-    color: #ffffffcf;
+    color: white;
 }
 
 blockquote {
@@ -7540,7 +7540,8 @@ left: 4vw;
     text-align: center;
     color: #fff;
     position: absolute;
-    top:100%;
+    top:100%
+   
 }
 
 .lgx-banner-info .circular-countdown-area {
@@ -10775,19 +10776,18 @@ left: 4vw;
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 52vw;
+    height: 45vw;
 }
 .video-container .video{
      /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
-  min-height: 100%; 
+     min-width: 100%;
+     min-height: 100%; 
 
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
+     width: 100%;
+     height: 51vw;
 
   /* Center the video */
-
 }
 
 .single-bottom .divider_box{
@@ -11310,7 +11310,7 @@ left: 4vw;
 #lgx-countdown {
     position: relative;
     text-align: center;
-    top: 36vw;
+    top: 37vw;
     /* bottom: 60%; */
     left: 8rem;
 }
@@ -13472,6 +13472,9 @@ blockquote.lgx-testi-single:before {
 }
 
 @media (max-width: 767px) {
+
+
+
     html {
         font-size:52%
     }
@@ -13934,6 +13937,10 @@ blockquote.lgx-testi-single:before {
 
 
 @media (max-width: 480px) {
+
+    .video-container{
+    height: 52vw;
+    }
     .lgx-inner-countdown,.lgx-subscribe-form {
         display:block
     }
