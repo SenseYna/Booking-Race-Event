@@ -416,7 +416,7 @@ textarea.form-control {
     /* margin-bottom: 6.8rem; */
     overflow: hidden;
     display: block;
-    margin-top: 0rem;
+    margin-bottom: 2rem;
 }
 
 .lgx-heading .heading {
@@ -13801,8 +13801,9 @@ blockquote.lgx-testi-single:before {
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    background-position: center;    
+    background-position: center;
     /* background-size: contain; */
+    margin-top: 15px;
 }
 
 .lgx-racekit .container{
