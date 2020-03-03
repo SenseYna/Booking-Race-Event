@@ -12,7 +12,7 @@ require('./src/model/connect.js');
 require('./src/model/schema');
 
 isEarlyBird = false
-vipTicket = 12;
+vipTicket = 12
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'src', 'app', 'views'));

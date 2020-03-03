@@ -483,7 +483,7 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="lgx-registration-area">
-                <div class="col-ld-4 col-xs-12">
+                <div class="col-md-4 col-xs-12">
                   <div class="lgx-single-registration minato-price">
                     <div class="lgx-single-registration-inner">
                       <div class="single-top">
@@ -506,10 +506,8 @@
 
                   </div>
                 </div>
-                <% if(typeof isEarlyBird != 'undefined' && isEarlyBird == true) { %>
-
-                <% } else { %>
-                <div class="col-ld-4 col-xs-12">
+                
+                <div class="col-md-4 col-xs-12">
                   <div class="lgx-single-registration genin-price">
                     <div class="lgx-single-registration-inner">
                       <div class="single-top">
@@ -536,8 +534,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-ld-4 col-xs-12">
+                <% if(typeof vipTicket != 'undefined' && vipTicket<=0) { %>
 
+                <% } else { %>
+                <div class="col-md-4 col-xs-12">
                   <div class="lgx-single-registration team7-price">
                     <div class="lgx-single-registration-inner">
                       <div class="single-top">
@@ -555,7 +555,6 @@
                           vực check-in
                           riêng.<br>- Ghế Vip xem văn nghệ.<br>- Được 8 lượt chơi
                           miễn phí các gian hàng trò chơi tại Ngày hội Xanh.<br>-Quyền lợi vé Vip.</p>
-
 
 
                         <button class="lgx-btn lgx-btn-red" type="button" data-toggle="modal"
@@ -807,13 +806,15 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">Loại vé</label>
               <select class="form-control" id="exampleFormControlSelect1" name="ticketId" required>
-                <% if(!isEarlyBird) { %>
+                <% if(vipTicket>0) { %>
                 <% ticketCategories.map((item, index) => { %>
                 <option value="<%- item._id %>"><%- item.name %> (<%- item.prices %>.000 VND)</option>
                 <% }) %>
                 <% } else { %>
                 <option value="<%- ticketCategories[0]._id %>"><%- ticketCategories[0].name %>
                   (<%- ticketCategories[0].prices %>.000 VND)</option>
+                  <option value="<%- ticketCategories[1]._id %>"><%- ticketCategories[1].name %>
+                  (<%- ticketCategories[1].prices %>.000 VND)</option>
                 <% } %>
               </select>
             </div>

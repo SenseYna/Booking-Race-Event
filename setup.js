@@ -22,18 +22,18 @@ async function setup() {
     let usersInfo = await mongoose.model("users").create(insert);
   });
   await mongoose.model("ticketCategories").create({
-    name: "Vé Minato",
-    prices: "180",
+    name: "Vé Free",
+    prices: "0",
     time: 1
   })
   await mongoose.model("ticketCategories").create({
-    name: "Vé Genin",
-    prices: "260",
+    name: "Vé Vip",
+    prices: "100",
     time: 1
   })
   await mongoose.model("ticketCategories").create({
-    name: "Vé Team 7",
-    prices: "760",
+    name: "Vé VVip",
+    prices: "200",
     time: 1
   })
 

@@ -20,7 +20,7 @@ router.get("/logout", (req, res, next) => {
 
 router.get("/activeTickets", async (req, res, next) => {
   try {
-    isEarlyBird = !isEarlyBird;
+    vipTicket = 12;
     return res.status(200).send("A")
   } catch (err) {
     next(err);
