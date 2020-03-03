@@ -7,9 +7,9 @@ const moment = require("moment");
 
 
 const tickets = async (req, res, next) => {
-    if(vipTicket<=0){
-       return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: false });
-    }
+
+
+    
   try {
     const insert = {
       ...pick(req.body, [
@@ -21,10 +21,17 @@ const tickets = async (req, res, next) => {
         "isHaveKit"
       ])
     };
+    if(vipTicket<=0 && insert.ticketId=="5e54cde61d9da04f443b7a82"){
+
+       return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: false });
+    }
+
+
 
   
     const newTickets = await mongoose.model("tickets").create(insert);
     const ticket = await mongoose.model("ticketCategories").findById(req.body.ticketId);
+
 
     let html = await ejs.renderFile("src/app/routes/template/template.ejs", {
       domain,
