@@ -22,12 +22,21 @@ const tickets = async (req, res, next) => {
       ])
     };
 
-    if(vipTicket<=0 && insert.ticketId=="5e54cde61d9da04f443b7a82"){
+    if( insert.ticketId=="5e54cde61d9da04f443b7a82")
+    {
+       let ticketCount = await mongoose.model("tickets").count({ticketId: "5e54cde61d9da04f443b7a82", });
+         if( ticketCount>=12)
+         {
        const ticketCategories = await mongoose.model("ticketCategories").find();
 
        return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: false });
-    }
+        }
 
+  
+    }
+ 
+   
+    
 
 
   

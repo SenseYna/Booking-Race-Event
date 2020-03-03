@@ -148,7 +148,7 @@
             <div class="container-fluid">
               <div class=" col-sm-12">
                 <div class="time-heading">
-                  NGÀY DIỄN RA ĐƯỜNG CHẠY: 02/05/2020
+                 <!--  NGÀY DIỄN RA ĐƯỜNG CHẠY: 02/05/2020
                 </div>
               </div>
               <div class="col-sm-6">
@@ -157,7 +157,7 @@
                   <div class="lgx-countdown-area lgx-countdown-simple">
 
                     <div id="lgx-countdown" data-date="2020/05/02"></div>
-                  </div>
+                  </div>-->
                   <!-- <h3>Naruto in Concert</h3> -->
                 </div>
               </div>
@@ -515,7 +515,7 @@
 
                   </div>
                 </div>
-                
+
                 <div class="col-md-4 col-xs-12">
                   <div class="lgx-single-registration genin-price">
                     <div class="lgx-single-registration-inner">
@@ -543,12 +543,15 @@
                     </div>
                   </div>
                 </div>
-                <% if(typeof vipTicket != 'undefined' && vipTicket<=0) { %>
+                <% if(typeof isEarlyBird != 'undefined' && isEarlyBird==true) { %>
 
                 <% } else { %>
+
+                <% if( typeof vipTicket != 'undefined' && vipTicket<=0  ) { %>
                 <div class="col-md-4 col-xs-12">
-                  <div class="lgx-single-registration team7-price">
-                    <div class="lgx-single-registration-inner">
+                  <div class="lgx-single-registration team7-price" disabled
+                    style="pointer-events: none; background-color: #6d6d6d">
+                    <div class="lgx-single-registration-inner" style="background-color:transparent;">
                       <div class="single-top">
                         <img src="/homepage/assets/img/team7-img.png" style=" max-width: 93%; " alt="" srcset="">
                       </div>
@@ -566,21 +569,55 @@
                           miễn phí các gian hàng trò chơi tại Ngày hội Xanh.<br>-Quyền lợi vé Vip.</p>
 
 
+
                         <button class="lgx-btn lgx-btn-red" type="button" data-toggle="modal"
-                          data-target="#exampleModal">
-                          <span>Mua vé</span>
+                          data-target="#exampleModal" style="background-color: #4e4e4e">
+                          <span>Đã hết vé</span>
                           <!-- <span class="lgx-btn" href="#"><span>Mua vé</span></a> -->
                       </div>
                     </div>
                   </div>
+
+                  <% } else { %>
+                       <div class="col-md-4 col-xs-12">
+                    <div class="lgx-single-registration team7-price">
+                      <div class="lgx-single-registration-inner">
+                        <div class="single-top">
+                          <img src="/homepage/assets/img/team7-img.png" style=" max-width: 93%; " alt="" srcset="">
+                        </div>
+                        <div class="single-middle">
+                        </div>
+                        <div class="single-bottom">
+
+                          <h2 class="title">Vé VVip</h2>
+                          <h3 class="price">200.000đ</h3>
+                          <hr noshade class="divider_box">
+                          <p>- Quà từ
+                            nhóm nhạc SGO48.<br>- VIP vouchers: Yes Cafe, Đông Du Tea, Bobapop, Trà sữa BonBon.<br>- Khu
+                            vực check-in
+                            riêng.<br>- Ghế Vip xem văn nghệ.<br>- Được 8 lượt chơi
+                            miễn phí các gian hàng trò chơi tại Ngày hội Xanh.<br>-Quyền lợi vé Vip.</p>
+
+
+                          <button class="lgx-btn lgx-btn-red" type="button" data-toggle="modal"
+                            data-target="#exampleModal">
+                            <span>Mua vé</span>
+                            <!-- <span class="lgx-btn" href="#"><span>Mua vé</span></a> -->
+                        </div>
+                      </div>
+                    </div>
+
                   <% } %>
+
+             
+                    <% } %>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div><!-- //.CONTAINER -->
-      </div><!-- //.INNER -->
-    </div>
+          </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+      </div>
   </section>
 
   <!--SPONSORED-->
@@ -822,15 +859,15 @@
                 <% } else { %>
                 <option value="<%- ticketCategories[0]._id %>"><%- ticketCategories[0].name %>
                   (<%- ticketCategories[0].prices %>.000 VND)</option>
-                  <option value="<%- ticketCategories[1]._id %>"><%- ticketCategories[1].name %>
+                <option value="<%- ticketCategories[1]._id %>"><%- ticketCategories[1].name %>
                   (<%- ticketCategories[1].prices %>.000 VND)</option>
                 <% } %>
               </select>
             </div>
-             <div class="form-group">
+            <div class="form-group">
               <label for="quanlity">Số lượng vé</label>
               <input type="number" class="lgx-input-form form-control" id="quanlity" name="quanlity" required
-                placeholder="1" min="1"  />
+                placeholder="1" min="1" />
             </div>
             <div class="">
               <p style=" font-weight: 500; color: #ea0202; font-family: initial; ">Sau khi đăng kí vui
@@ -852,8 +889,8 @@
     </div>
   </div>
   <!-- Modal 2-->
-   <% if(typeof isOk != 'undefined' && isOk==true ) { %>
-               <div class="modal" tabindex="-1" role="dialog" style="display: block">
+  <% if(typeof isOk != 'undefined' && isOk==true ) { %>
+  <div class="modal" tabindex="-1" role="dialog" style="display: block">
     <div class="modal-dialog" role="document"
       style="max-width: 400px;background: url(/homepage/assets/img/naruto-ok.png);background-color: #81c6ba;background-size: contain;background-repeat: no-repeat;background-position: center;border-radius: 10px;top: 50%;transform: translateY(-60%);">
       <div class="modal-content" style="background: #00000021;">
@@ -873,8 +910,8 @@
       </div>
     </div>
   </div>
-        <% } else  if(typeof isOk != 'undefined' && isOk==false ) { %>
-                 <div class="modal" tabindex="-1" role="dialog" style="display: block">
+  <% } else  if(typeof isOk != 'undefined' && isOk==false ) { %>
+  <div class="modal" tabindex="-1" role="dialog" style="display: block">
     <div class="modal-dialog" role="document"
       style="max-width: 400px;background: url(/homepage/assets/img/naruto-ok.png);background-color: #81c6ba;background-size: contain;background-repeat: no-repeat;background-position: center;border-radius: 10px;top: 50%;transform: translateY(-60%);">
       <div class="modal-content" style="background: #00000021;">
@@ -886,7 +923,8 @@
           ">Thông báo</h5>
         </div>
         <div class="modal-body text-center">
-          <p style="color: #ffffff;font-size: 2.1rem;">Vé đã hết !!!! Hẹn bạn trong những dịp tới của chiến dịch !!!!!</p>
+          <p style="color: #ffffff;font-size: 2.1rem;">Vé đã hết !!!! Hẹn bạn trong những dịp tới của chiến dịch !!!!!
+          </p>
         </div>
         <div class="modal-footer" style=" border: none; ">
           <button type="button" onclick="window.location.replace('/')" class="btn btn-primary lgx-btn">Đóng</button>
@@ -894,8 +932,8 @@
       </div>
     </div>
   </div>
-                <% } %>
- 
+  <% } %>
+
   <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
   <!-- JQUERY  -->
   <script src="/homepage/assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -953,23 +991,23 @@
   <!-- CUSTOM SCRIPT  -->
   <script src="/homepage/assets/js/custom.script.js"></script>
   <script type="text/javascript">
-     
-      var elX = document.getElementById("exampleFormControlSelect1");
-      var elY = document.getElementById("quanlity");
-        
+
+    var elX = document.getElementById("exampleFormControlSelect1");
+    var elY = document.getElementById("quanlity");
+
 
 
     function limit() {
-        var strUser=elX.options[elX.selectedIndex].value;
-        
-        if(strUser!='5e54cde51d9da04f443b7a81')
-              elY.value=1;
-           
+      var strUser = elX.options[elX.selectedIndex].value;
+
+      if (strUser != '5e54cde51d9da04f443b7a81')
+        elY.value = 1;
+
 
     }
 
-    elX.onchange=limit;
-    elY.onchange=limit;
+    elX.onchange = limit;
+    elY.onchange = limit;
   </script>
 
 
