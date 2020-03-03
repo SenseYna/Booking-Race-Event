@@ -21,7 +21,9 @@ const tickets = async (req, res, next) => {
         "isHaveKit"
       ])
     };
+
     if(vipTicket<=0 && insert.ticketId=="5e54cde61d9da04f443b7a82"){
+       const ticketCategories = await mongoose.model("ticketCategories").find();
 
        return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: false });
     }
@@ -48,11 +50,6 @@ const tickets = async (req, res, next) => {
    {
     vipTicket-=1;
    }
-
-
-
-  
-
     
 
     Send(newTickets.email, "[Chiến dịch Tình nguyện Mảnh Ghép Mới] - Xác nhận Đăng ký vé và hướng dẫn thanh toán ", html);
