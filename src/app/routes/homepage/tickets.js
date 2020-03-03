@@ -7,6 +7,9 @@ const moment = require("moment");
 
 
 const tickets = async (req, res, next) => {
+    if(vipTicket<=0){
+       return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: false });
+    }
   try {
     const insert = {
       ...pick(req.body, [
@@ -33,13 +36,14 @@ const tickets = async (req, res, next) => {
       moment
     });
 
-
-
    
    if(ticket.name=="Vé VVip")
    {
     vipTicket-=1;
    }
+
+
+
   
 
     
@@ -47,6 +51,7 @@ const tickets = async (req, res, next) => {
     Send(newTickets.email, "[Chiến dịch Tình nguyện Mảnh Ghép Mới] - Xác nhận Đăng ký vé và hướng dẫn thanh toán ", html);
 
     const ticketCategories = await mongoose.model("ticketCategories").find();
+  
     return res.render('homepage/index', { ticketCategories, isEarlyBird,vipTicket, isOk: true });
     // return res.redirect("/")
   } catch (err) {
