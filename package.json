@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "check-node-version": "^4.0.2",
     "config": "^3.2.5",
     "cookie-parser": "~1.4.4",
     "cross-env": "^5.2.0",
