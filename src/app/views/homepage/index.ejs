@@ -92,6 +92,36 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 
+<!-- RudderStack -->
+<script>
+    rudderanalytics = window.rudderanalytics = [];
+    
+    var  methods = [
+        "load",
+        "page",
+        "track",
+        "identify",
+        "reset"
+    ];
+
+    for (var i=0; i<methods.length; i++) {
+        var method = methods[i];
+        rudderanalytics[method] = function(methodName) {
+            return function() {
+                rudderanalytics.push([methodName, ...arguments]);
+            }
+        } (method)
+    }
+    rudderanalytics.load("1bDZrVAZppGja6t0dX0SGECX9XV", "https://hosted.rudderlabs.com");
+    //For example,
+    //rudderanalytics.load("1Qb1F3jSWv0eKFBPZcrM7ypgjVo", "http://localhost:8080");
+    rudderanalytics.page();
+</script>
+
+<script  src="https://cdn.rudderlabs.com/rudder-analytics.min.js"></script>
+<!-- End RudderStack -->
+
+
   <!-- MODERNIZER CSS  -->
   <script src="/homepage/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
